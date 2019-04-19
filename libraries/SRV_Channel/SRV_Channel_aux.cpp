@@ -46,7 +46,10 @@ void SRV_Channel::output_ch(void)
             if (SRV_Channels::passthrough_disabled()) {
                 output_pwm = rc->get_radio_trim();
             } else {
-                output_pwm = rc->get_radio_in();
+            	if(rc->get_radio_in()<1500)
+                output_pwm = 0;
+            	else
+            		output_pwm =20000;
             }
         }
     }

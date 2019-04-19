@@ -31,6 +31,7 @@ bool Ltr_PWMLed::init(void)
 	    hal.gpio->pinMode(HAL_GPIO_NUM_GPIOH_12, HAL_GPIOH_OUTPUT);
 	    hal.gpio->pinMode(HAL_GPIO_NUM_GPIOA_7, HAL_GPIOH_OUTPUT); //初始化
 
+	 /*
 	    hal.gpio->pinMode(HAL_GPIO_NUM_GPIOD_13, HAL_GPIOH_OUTPUT); //初始化
 	    hal.gpio->pinMode(HAL_GPIO_NUM_GPIOD_14, HAL_GPIOH_OUTPUT); //初始化
 
@@ -39,7 +40,7 @@ bool Ltr_PWMLed::init(void)
 	    hal.gpio->pinMode(HAL_GPIO_NUM_GPIOE_11, HAL_GPIOH_OUTPUT); //初始化
 	    hal.gpio->pinMode(HAL_GPIO_NUM_GPIOE_9, HAL_GPIOH_OUTPUT); //初始化
 
-
+*/
 
 
 
@@ -50,7 +51,7 @@ bool Ltr_PWMLed::init(void)
 	    hal.gpio->write(HAL_GPIO_NUM_GPIOA_7, HAL_GPIOA_IMU_CONT_TEMP_OFF);  //PA7
 
 
-
+/*
 	    hal.gpio->write(HAL_GPIO_NUM_GPIOE_14, HAL_GPIOD_Lidar_ON);  //PD13
 	    hal.gpio->write(HAL_GPIO_NUM_GPIOA_10, HAL_GPIOD_Lidar_ON);  //PD14
 	    hal.gpio->write(HAL_GPIO_NUM_GPIOE_11, HAL_GPIOD_Lidar_ON);  //PD13
@@ -59,7 +60,7 @@ bool Ltr_PWMLed::init(void)
 	    hal.gpio->write(HAL_GPIO_NUM_GPIOD_13, HAL_GPIOD_Lidar_OFF);  //PD13
 	    hal.gpio->write(HAL_GPIO_NUM_GPIOD_14, HAL_GPIOD_Lidar_ON);  //PD14
 
-
+*/
 	    _counter=0;
 	    ltr_pwmled_init_completed_flag=1;
 	    return 1;
